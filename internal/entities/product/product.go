@@ -43,6 +43,10 @@ func (p *Product) GetMap() map[string]interface{} {
 	}
 }
 
+func (p *Product) TableName() string {
+	return "products"
+}
+
 func ParseDynamoAttributeToStruct(response map[string]*dynamodb.AttributeValue) (p Product, err error) {
 	if response == nil || (response != nil && len(response) == 0) {
 		return p, errors.New("Item not found")
