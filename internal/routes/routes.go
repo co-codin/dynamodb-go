@@ -2,6 +2,8 @@ package routes
 
 import (
 	"dynamo-golang/config"
+	HealthHandler "dynamo-golang/internal/handlers/health"
+	ProductHandler "dynamo-golang/internal/handlers/product"
 	"dynamo-golang/internal/repository/adapter"
 
 	"github.com/go-chi/chi"

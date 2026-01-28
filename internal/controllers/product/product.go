@@ -81,8 +81,8 @@ func (c *Controller) Update(id uuid.UUID, entity *product.Product) error {
 	return err
 }
 
-func (c *Controller) Remove(ID uuid.UUID) error {
-	entity, err := c.ListOne(ID)
+func (c *Controller) Remove(id uuid.UUID) error {
+	entity, err := c.ListOne(id)
 	if err != nil {
 		return err
 	}
