@@ -80,3 +80,4 @@ func NewAdapter(con *dynamodb.DynamoDB) Interface {
 		logMode:    false,
 	}
 }
+
