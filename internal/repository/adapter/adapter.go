@@ -81,3 +81,4 @@ func NewAdapter(con *dynamodb.DynamoDB) Interface {
 	}
 }
 
+
